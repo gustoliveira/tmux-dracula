@@ -20,7 +20,7 @@ main() {
     ip=$(curl -s "$IP_SERVER")
 
     network_public_ip_label=$(get_tmux_option "@dracula-network-public-ip-label" "IP")
-    echo "$network_public_ip_label $ip" > "${DATAFILE}"
+    echo "$network_public_ip_label$ip" > "${DATAFILE}"
     printf '%s' "$_now" > "${LAST_EXEC_FILE}"
   fi
 
