@@ -165,14 +165,6 @@ main()
     bat_label=""
   fi
 
-  if [[ "$bat_label" =~ ^[bB]at$ ]]; then
-    bat_label="🦇"
-  fi
-
-  if [ "$bat_label" == false ]; then
-    bat_label=""
-  fi
-
   # get label for when there is no battery
   no_bat_label=$(get_tmux_option "@dracula-no-battery-label" "AC")
   if [ "$no_bat_label" == false ]; then
