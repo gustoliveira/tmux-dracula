@@ -205,7 +205,7 @@ This widget provides information about the current charge of the battery, whethe
 Display any icon for the battery you'd like with:
 
 ```bash
-set -g @dracula-battery-label "♥ "
+set -g @dracula-battery-label "🦇 "
 ```
 
 to use nothing but nerdfont icons informing you about the current state, use the following,
